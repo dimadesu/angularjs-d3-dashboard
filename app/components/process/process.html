@@ -4,17 +4,17 @@
       <div class="row">
         <div class="col-xs-6 process__label">
           Process
-          <span class="process__id">01</span>
+          <span class="process__id">{{ data.id }}</span>
         </div>
         <div class="col-xs-6 text-right">
-          <span class="glyphicon glyphicon-remove process__remove"></span>
+          <span class="glyphicon glyphicon-remove process__remove" ng-click="remove({processId: data.id})"></span>
         </div>
       </div>
     </div>
     <div class="clearfix cpu">
       <div class="process__cpu__text">
         <div class="process__stats__label">CPU %</div>
-        <div class="process__stats__value process__cpu">73</div>
+        <div class="process__stats__value process__cpu">{{ data.cpu }}</div>
       </div>
       <div class="process__cpu__graph">
       </div>
@@ -25,7 +25,7 @@
           Status
         </div>
         <div class="process__stats__value process__status__value">
-          On
+          {{ data.status }}
         </div>
       </div>
       <div class="process__instances">
@@ -33,7 +33,7 @@
           Instances
         </div>
         <div class="process__stats__value process__instances__value">
-          4
+          {{ data.instances }}
         </div>
       </div>
       <div class="process__memory">
@@ -41,7 +41,7 @@
           Memory MB
         </div>
         <div class="process__stats__value process__memory__value">
-          6
+          {{ data.memory }}
         </div>
       </div>
       <div class="process__up-time">
@@ -49,7 +49,7 @@
           Up Time
         </div>
         <div class="process__stats__value process__up-time__value">
-          00:00:00
+          {{ data.upTime }}
         </div>
       </div>
       <div class="process__restarts">
@@ -57,7 +57,7 @@
           Restarts
         </div>
         <div class="process__stats__value process__restarts__value">
-          3
+          {{ data.restarts }}
         </div>
       </div>
     </div>

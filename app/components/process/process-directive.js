@@ -5,8 +5,9 @@ angular.module('app.components.process')
   return {
     restrict: 'E',
     templateUrl: '/components/process/process.html',
-    link: function(scope, elm, attrs) {
-      //elm.text(version);
+    scope: {
+      data: '=',
+      remove: '&onRemove'
     }
   };
 });
