@@ -1,57 +1,63 @@
 <div class="col-md-6">
   <div class="process">
-    <div class="clearfix process__header">
-      <div class="process__label pull-left">
-        Process 01
+    <div class="process__header">
+      <div class="row">
+        <div class="col-xs-6 process__label">
+          Process
+          <span class="process__id">01</span>
+        </div>
+        <div class="col-xs-6 text-right">
+          <span class="glyphicon glyphicon-remove process__remove"></span>
+        </div>
       </div>
-      <span class="glyphicon glyphicon-remove pull-right"></span>
     </div>
-    <div class="cpu">
-      <div class="cpu__text">
-        <div class="cpu__label">CPU %</div>
-        <div class="cpu__value">73</div>
+    <div class="clearfix cpu">
+      <div class="process__cpu__text">
+        <div class="process__stats__label">CPU %</div>
+        <div class="process__stats__value process__cpu">73</div>
       </div>
-      <div class="cpu__graph">Graph</div>
+      <div class="process__cpu__graph">
+      </div>
     </div>
-    <div class="process__stats">
+    <div class="clearfix process__stats__group">
       <div class="process__status">
         <div class="process__stats__label">
           Status
         </div>
-        <div class="process__status__value">
+        <div class="process__stats__value process__status__value">
           On
         </div>
       </div>
       <div class="process__instances">
         <div class="process__stats__label">
-          Status
+          Instances
         </div>
-        <div class="process__instances__value">
-          On
+        <div class="process__stats__value process__instances__value">
+          4
         </div>
       </div>
       <div class="process__memory">
         <div class="process__stats__label">
-          Status
+          Memory MB
         </div>
-        <div class="process__memory__value">
-          On
+        <div class="process__stats__value process__memory__value">
+          6
         </div>
       </div>
       <div class="process__up-time">
         <div class="process__stats__label">
-          Status
+          Up Time
         </div>
-        <div class="process__up-time__value">
-          On
+        <div class="process__stats__value process__up-time__value">
+          00:00:00
         </div>
       </div>
       <div class="process__restarts">
         <div class="process__stats__label">
-          Status
+          Restarts
         </div>
-        <div class="process__restarts__value">
-          On
+        <div class="process__stats__value process__restarts__value">
+          3
         </div>
       </div>
     </div>

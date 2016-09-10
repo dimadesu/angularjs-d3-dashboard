@@ -1,3 +1,5 @@
+/* Fonts */
+
 @font-face {
   font-family: "DJB Get Digital";
   src: url("//db.onlinewebfonts.com/t/15f83f7e450398162d9fc5edf78c1794.eot");
@@ -37,40 +39,32 @@
   cursor: pointer;
 }
 
-/* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}
-
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
-}
-
-/**/
+/* Common */
 
 body {
-  font-family: "Segoe UI Bold", "DJB Get Digital";
+  font-family: "Segoe UI Bold";
+  font-size: 12px;
+  background: #f2f2f2;
   padding-top: 70px;
+}
+
+.btn {
+  font-family: "Segoe UI Semibold";
+  font-size: inherit;
+  color: #808080;
+}
+
+/* Navbar */
+
+.navbar-default .navbar-brand {
+  font-size: 22px;
+  color: #bdccd4;
+}
+
+.navbar-nav > li > a {
+  font-size: 22px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #bdccd4;
 }
