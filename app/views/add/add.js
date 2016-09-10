@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.add', ['ngRoute'])
+angular.module('app.views.add', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/add', {

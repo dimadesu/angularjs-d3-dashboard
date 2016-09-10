@@ -8,6 +8,26 @@
   url("//db.onlinewebfonts.com/t/15f83f7e450398162d9fc5edf78c1794.svg#DJB Get Digital") format("svg");
 }
 
+@font-face {
+  font-family: "Segoe UI Bold";
+  src: url("//db.onlinewebfonts.com/t/60570a3f64a1fece44ebf71b43617029.eot");
+  src: url("//db.onlinewebfonts.com/t/60570a3f64a1fece44ebf71b43617029.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/60570a3f64a1fece44ebf71b43617029.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/60570a3f64a1fece44ebf71b43617029.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/60570a3f64a1fece44ebf71b43617029.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/60570a3f64a1fece44ebf71b43617029.svg#Segoe UI") format("svg");
+}
+
+@font-face {
+  font-family: "Segoe UI Semibold";
+  src: url("//db.onlinewebfonts.com/t/d4d6e1a6527a21185217393c427a52cb.eot");
+  src: url("//db.onlinewebfonts.com/t/d4d6e1a6527a21185217393c427a52cb.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/d4d6e1a6527a21185217393c427a52cb.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/d4d6e1a6527a21185217393c427a52cb.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/d4d6e1a6527a21185217393c427a52cb.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/d4d6e1a6527a21185217393c427a52cb.svg#Segoe UI Semibold") format("svg");
+}
+
 /* Angular Bootstrap UI fix from their install instructions */
 
 .nav,
@@ -51,6 +71,6 @@
 /**/
 
 body {
-  font-family: "DJB Get Digital";
+  font-family: "Segoe UI Bold", "DJB Get Digital";
   padding-top: 70px;
 }
