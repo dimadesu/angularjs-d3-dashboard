@@ -14,6 +14,40 @@ angular.module('app.components.process')
       scope.isTooManyRestarts = scope.data.restarts > 0;
 
       scope.htmlTooltip = '/components/process/restart-dates.html';
+
+      scope.pie = {};
+
+      scope.pie.options = {
+        chart: {
+          type: 'pieChart',
+          width: 100,
+          height: 100,
+          donut: true,
+          x: function(d){return d.key;},
+          y: function(d){return d.y;},
+          showLabels: false,
+          showLegend: false,
+          legend: {
+            margin: {
+              top: 0,
+              right: 0,
+              bottom: 0,
+              left: 0
+            }
+          }
+        }
+      };
+
+      scope.pie.data = [
+        {
+          key: "One",
+          y: scope.data.memory
+        },
+        {
+          key: "Two",
+          y: 100
+        },
+      ];
     }
   };
 });

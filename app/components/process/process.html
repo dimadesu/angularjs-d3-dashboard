@@ -40,8 +40,13 @@
       <div class="process__stats__label">
         Memory MB
       </div>
-      <div class="process__stats__value process__memory__value">
-        {{ data.memory }}
+      <div class="process__memory__value-wrap">
+        <div class="process__memory__chart">
+          <nvd3 options="pie.options" data="pie.data"></nvd3>
+        </div>
+        <div class="process__stats__value process__memory__value">
+          {{ data.memory }}
+        </div>
       </div>
     </div>
     <div class="process__up-time">

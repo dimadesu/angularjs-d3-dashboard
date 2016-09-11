@@ -102,8 +102,30 @@
   }
 }
 
+.process__memory__value-wrap {
+  position: relative;
+}
+
 .process__memory__value {
   font-size: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.process__memory__chart {
+  overflow: hidden;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 5px;
+  left: 50%;
+  margin-left: -20px;
+
+  svg {
+    position: absolute;
+    top: -35px;
+    left: -30px;
+  }
 }
 
 .process__up-time {

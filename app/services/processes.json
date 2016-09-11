@@ -4,7 +4,7 @@
     "cpu": 73,
     "status": "On",
     "instances": 4,
-    "memory": 1,
+    "memory": 30,
     "upTime": "00:00:20",
     "restarts": 3,
     "restartDates": [
