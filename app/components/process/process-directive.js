@@ -40,14 +40,47 @@ angular.module('app.components.process')
 
       scope.pie.data = [
         {
-          key: "One",
+          key: "Memory",
           y: scope.data.memory
         },
         {
-          key: "Two",
+          key: "MemoryAvailable",
           y: 100
-        },
+        }
       ];
+
+      scope.graph = {};
+
+      scope.graph.options = {
+        chart: {
+          type: 'stackedAreaChart',
+          height: 74,
+          showLabels: false,
+          showLegend: false,
+          showControls: false,
+          showXAxis: false,
+          showYAxis: false,
+          margin : {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
+          },
+          x: function(d){return d[0];},
+          y: function(d){return d[1];},
+          useVoronoi: false,
+          clipEdge: true,
+          duration: 0,
+          useInteractiveGuideline: false
+        }
+      };
+
+      scope.graph.data = [{
+        "key": "Graph",
+        "values": scope.data.cpuData
+      }];
+
+      // end
     }
   };
 });
