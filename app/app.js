@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('app', [
   'nvd3',
+  'ngDragDrop',
   'ngRoute',
   'ngAnimate',
   'ui.bootstrap',

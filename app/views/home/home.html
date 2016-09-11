@@ -8,7 +8,17 @@
 <!-- Main column -->
 <div class="col-md-10">
   <div class="row">
-    <div class="col-md-6 animated-repeat-item" ng-repeat="process in processes track by process.id">
+    <div
+      class="col-md-6 animated-repeat-item"
+      ng-repeat="process in processes track by process.id"
+      ng-model="processes"
+      data-drop="true"
+      data-drag="true"
+      jqyoui-droppable="{index: {{$index}}}"
+      jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}"
+      data-jqyoui-options="{revert: 'invalid'}"
+      data-direction="{{process.jqyouiDirection}}"
+    >
       <process data="process" on-remove="removeProcess(processId)"></process>
     </div>
   </div>
