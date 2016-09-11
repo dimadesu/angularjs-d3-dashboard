@@ -12,6 +12,8 @@ angular.module('app.components.process')
     link: function (scope, element, attrs) {
       scope.isStatusOn = scope.data.status === 'On';
       scope.isTooManyRestarts = scope.data.restarts > 0;
+
+      scope.htmlTooltip = '/components/process/restart-dates.html';
     }
   };
 });

@@ -6,7 +6,12 @@
     "instances": 4,
     "memory": 1,
     "upTime": "00:00:20",
-    "restarts": 0
+    "restarts": 3,
+    "restartDates": [
+      "22 Jan 2016 12:34:23",
+      "22 Jan 2016 12:32:05",
+      "22 Jan 2016 12:31:11"
+    ]
   },
   {
     "id": 2,
@@ -15,7 +20,7 @@
     "instances": 2,
     "memory": 50,
     "upTime": "00:03:00",
-    "restarts": 3
+    "restarts": 0
   },
   {
     "id": 3,
@@ -33,7 +38,7 @@
     "instances": 1,
     "memory": 19,
     "upTime": "24:00:00",
-    "restarts": 40
+    "restarts": 0
   },
   {
     "id": 5,
@@ -42,6 +47,6 @@
     "instances": 10,
     "memory": 91,
     "upTime": "14:10:00",
-    "restarts": 99
+    "restarts": 0
   }
 ]

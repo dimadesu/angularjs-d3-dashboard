@@ -59,6 +59,9 @@
         <div class="process__stats__value process__restarts__value" ng-class="{ 'text-danger': isTooManyRestarts }">
           {{ data.restarts }}
         </div>
+        <div class="process__restarts__details" ng-show="data.restartDates.length > 0">
+          <div class="glyphicon glyphicon-chevron-down" uib-tooltip-template="htmlTooltip" tooltip-placement="bottom"></div>
+        </div>
       </div>
     </div>
   </div>
