@@ -6,8 +6,8 @@
           Process
           <span class="process__id">{{ data.id }}</span>
         </div>
-        <div class="col-xs-6 text-right">
-          <span class="glyphicon glyphicon-remove process__remove" ng-click="remove({processId: data.id})"></span>
+        <div class="col-xs-6 text-right process__remove">
+          <span class="glyphicon glyphicon-remove" ng-click="remove({processId: data.id})"></span>
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@
         <div class="process__stats__label">
           Status
         </div>
-        <div class="process__stats__value process__status__value">
+        <div class="process__stats__value process__status__value" ng-class="{ 'text-success': isStatusOn, 'text-danger': !isStatusOn }">
           {{ data.status }}
         </div>
       </div>
@@ -56,7 +56,7 @@
         <div class="process__stats__label">
           Restarts
         </div>
-        <div class="process__stats__value process__restarts__value">
+        <div class="process__stats__value process__restarts__value" ng-class="{ 'text-danger': isTooManyRestarts }">
           {{ data.restarts }}
         </div>
       </div>

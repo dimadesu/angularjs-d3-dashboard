@@ -22,6 +22,10 @@
 
 .process__remove {
   color: #636f7e;
+
+  span {
+    cursor: pointer;
+  }
 }
 
 /* CPU & Stats common */
@@ -72,9 +76,6 @@
 
 .process__stats__group > div {
   float: left;
-}
-
-.process__stats__group > div {
   box-shadow: 1px 0 0 0 white;
 }
 
@@ -88,6 +89,16 @@
 .process__memory,
 .process__restarts {
   width: 16.66%;
+}
+
+.process__stats__group {
+  .text-success {
+    color: #96c93d;
+  }
+
+  .text-danger {
+    color: #ec1940;
+  }
 }
 
 .process__memory__value {

@@ -8,6 +8,10 @@ angular.module('app.components.process')
     scope: {
       data: '=',
       remove: '&onRemove'
+    },
+    link: function (scope, element, attrs) {
+      scope.isStatusOn = scope.data.status === 'On';
+      scope.isTooManyRestarts = scope.data.restarts > 0;
     }
   };
 });
