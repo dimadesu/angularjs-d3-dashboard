@@ -107,24 +107,23 @@
 }
 
 .process__memory__value {
-  font-size: 22px;
+  font-size: 20px;
   position: relative;
   z-index: 1;
 }
 
 .process__memory__chart {
-  overflow: hidden;
+  @side: 60px;
+
   position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 5px;
+  width: @side;
+  height: @side;
+  top: -5px;
   left: 50%;
-  margin-left: -20px;
+  margin-left: -(@side/2);
 
   svg {
     position: absolute;
-    top: -35px;
-    left: -30px;
   }
 }
 

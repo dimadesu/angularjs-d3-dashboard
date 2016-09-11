@@ -17,23 +17,23 @@ angular.module('app.components.process')
 
       scope.pie = {};
 
+      var pieSide = 60;
+
       scope.pie.options = {
         chart: {
           type: 'pieChart',
-          width: 100,
-          height: 100,
+          width: pieSide,
+          height: pieSide,
           donut: true,
           x: function(d){return d.key;},
           y: function(d){return d.y;},
           showLabels: false,
           showLegend: false,
-          legend: {
-            margin: {
-              top: 0,
-              right: 0,
-              bottom: 0,
-              left: 0
-            }
+          margin: {
+            top: 0,
+            right: 0,
+            bottom: 0,
+            left: 0
           }
         }
       };
