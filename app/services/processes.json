@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "cpu": 73,
+    "status": "On",
+    "instances": 4,
+    "memory": 1,
+    "upTime": "00:00:20",
+    "restarts": 0
+  },
+  {
+    "id": 2,
+    "cpu": 50,
+    "status": "Off",
+    "instances": 2,
+    "memory": 50,
+    "upTime": "00:03:00",
+    "restarts": 3
+  },
+  {
+    "id": 3,
+    "cpu": 10,
+    "status": "On",
+    "instances": 1,
+    "memory": 9,
+    "upTime": "04:00:00",
+    "restarts": 0
+  },
+  {
+    "id": 4,
+    "cpu": 100,
+    "status": "Off",
+    "instances": 1,
+    "memory": 19,
+    "upTime": "24:00:00",
+    "restarts": 40
+  },
+  {
+    "id": 5,
+    "cpu": 110,
+    "status": "Off",
+    "instances": 10,
+    "memory": 91,
+    "upTime": "14:10:00",
+    "restarts": 99
+  }
+]
