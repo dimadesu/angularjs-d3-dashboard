@@ -8,6 +8,8 @@
 <!-- Main column -->
 <div class="col-md-10">
   <div class="row">
-    <process data="process" ng-repeat="process in processes track by process.id" on-remove="removeProcess(processId)"></process>
+    <div class="col-md-6 animated-repeat-item" ng-repeat="process in processes track by process.id">
+      <process data="process" on-remove="removeProcess(processId)"></process>
+    </div>
   </div>
 </div>

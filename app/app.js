@@ -9,6 +9,9 @@ angular.module('app', [
   'app.components',
   'app.views'
 ])
+.run(function($animate) {
+  $animate.enabled(true);
+})
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
