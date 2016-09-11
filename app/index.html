@@ -29,16 +29,7 @@
 </nav>
 
 <div class="container-fluid">
-  <div class="row">
-    <!-- Sidebar -->
-    <div class="col-md-2">
-      <p>
-        <a class="btn btn-default btn-block" href="#!/add">Add Process</a>
-      </p>
-    </div>
-    <!-- Main column -->
-    <div class="col-md-10" ng-view>
-    </div>
+  <div class="row" ng-view>
   </div>
 </div>
 
@@ -49,6 +40,8 @@
 <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 
 <script src="app.js"></script>
+<script src="services/services.js"></script>
+<script src="services/processes.js"></script>
 <script src="components/components.js"></script>
 <script src="components/process/process.js"></script>
 <script src="components/process/process-directive.js"></script>
@@ -57,6 +50,5 @@
 <script src="components/version/interpolate-filter.js"></script>
 <script src="views/views.js"></script>
 <script src="views/home/home.js"></script>
-<script src="views/add/add.js"></script>
 </body>
 </html>

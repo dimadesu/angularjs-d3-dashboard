@@ -1,4 +1,13 @@
 
-<div class="row">
-  <process data="process" ng-repeat="process in processes" on-remove="removeProcess(processId)"></process>
+<!-- Sidebar -->
+<div class="col-md-2">
+  <p>
+    <a class="btn btn-default btn-block" ng-click="addProcess()">Add Process</a>
+  </p>
+</div>
+<!-- Main column -->
+<div class="col-md-10">
+  <div class="row">
+    <process data="process" ng-repeat="process in processes track by process.id" on-remove="removeProcess(processId)"></process>
+  </div>
 </div>
